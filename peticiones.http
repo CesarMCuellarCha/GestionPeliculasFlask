@@ -1,0 +1,49 @@
+###listar generos
+
+GET http://127.0.0.1:5400/genero/
+
+###listar peliculas
+
+GET http://127.0.0.1:5400/pelicula/
+
+### agregar genero
+POST http://127.0.0.1:5400/genero/
+Content-Type: application/json
+
+{
+    "genero": "Infantil"
+}
+
+### agregar pelicula
+
+POST http://127.0.0.1:5400/pelicula/
+Content-Type: application/json
+
+{
+    "codigo": 2040,
+    "titulo": "Mujer XXXXXXXXXXX",
+    "protagonista": "La  de siempre",
+    "duracion": 90,
+    "resumen": "ZZZZZZZZZZZZZZZZZ",
+    "genero": 2
+}
+
+### actualiza genero
+
+PUT http://127.0.0.1:5400/genero/
+Content-Type: application/json
+
+{
+    "id":4,
+    "nombre":"Cultura"
+}
+
+
+### elimianr genero
+
+DELETE http://127.0.0.1:5400/genero/
+Content-Type: application/json
+
+{
+    "id":5
+}
